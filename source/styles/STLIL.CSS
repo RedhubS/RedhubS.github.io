@@ -1,0 +1,173 @@
+body {
+    background-color: #f8f8f8;
+    background: url(KrasiviyFon.jpg); 
+		background-attachment: fixed; 
+		background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+}
+.navbar-nav .nav-link.active {
+    color:rgb(143, 142, 142);
+}
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(143, 142, 142);
+}
+
+.model{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+
+    width: 340px;
+    padding: 15px;
+    background-color: #fff;
+}
+center{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
+
+input{
+    height: 20px;
+    width: 300px;
+    border: 1px solid grey;
+    margin: 5px;
+}
+
+.btn{
+    height: 30px;
+    width: 300px;
+
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: 1px;
+
+    color: #f8f8f8;
+
+    background-color: #1cbc11;
+    
+}
+
+.btn:hover{
+    background-color: #14a20a;
+}
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+ /* Поля ввода полной ширины */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+        
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+        
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+        
+
+button {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+     
+.containerz {
+    width: auto;
+    height: auto;
+    background-image: url('KrasiviyFon.jpg');
+    background-size: cover;
+}
+button:hover {
+opacity:1;
+}
+        
+/* Дополнительные стили для кнопки "Отмена" */
+.cancelbtn {
+padding: 14px 20px;
+background-color: #f44336;
+}
+        
+/* Поплавок отмена и кнопки регистрации и добавить равную ширину */
+.cancelbtn, .signupbtn {
+float: left;
+width: 50%;
+}
+        
+/* Добавить отступы к элементам контейнера */
+.container {
+padding: 16px;
+}
+        
+/* Очистить поплавки */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+        
+/* Измените стили для кнопки отмены и кнопки регистрации на дополнительных маленьких экранах */
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+width: 100%;
+}
+}
+
+
+a.button9 {
+    position: relative;
+    display: inline-block;
+    color: #777674;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+    user-select: none;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image:
+     linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+     linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+     linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+     linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+     linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+     linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+  }
+  a.button9:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  }
+  a.button9:active {
+    top: 1px;
+  }
+        

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="source/styles/STLIL.CSS">
+  <link rel="stylesheet" href="source/styles/mycss.css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="source/files/favicon_io/site.webmanifest">
+  <title>ДП ИНМИС</title>
+
+  <script src="source/js/jquery-1.6.4.min.js"></script>
+		<script src="source/js/custom.js"></script>
+
+    <link rel="stylesheet" media="screen" href="source/styles/superfish.css" /> 
+		<script  src="source/js/superfish.js"></script>
+
+  <link rel="stylesheet" href="source/styles/flexslider.css" >
+		<script src="source/js/jquery.flexslider-min.js"></script>
+ 
+</head>
+<body class="containerz" style="display: block;">
+ 
+  <header>
+       
+  <button onclick="document.getElementById('id01').style.display='block'" class="close" style="width:auto;" >Регистрация</button>
+    
+  <button onclick="document.getElementById('id02').style.display='block'" class="close" style="width:auto;" >Войти</button>
+
+  <button onclick="document.getElementById('id03').style.display='block'" class="close" style="width:auto;" >Войти как менеджер</button>
+  </div>
+  </header>
+  <div class="left">
+  <div id="id01" class="modal" visibility: hidden>
+    <span onclick="document.getElementById('id01').style.display='none'" visibility: visible class="close" title="Закрыть Modal">&times;</span>
+    <form class="modal-content" action="registration.php" method="post">
+      <div class="container">
+        <h1>Регистрация</h1>
+        <p style="color: black;">Создайте аккаунт.</p>
+        <hr>
+
+        <label for="login"><b>Логин</b></label>
+        <input type="text" id="login" placeholder=" Введите Имя" name="login" required>
+
+        <label for="tel"><b>Телефон</b></label>
+        <input type="text" id="tel" placeholder=" Введите Номер телефона" name="tel" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" id="email" placeholder=" Введите Email" name="email" required>
+  
+        <label for="password"><b>Пароль</b></label>
+        <input type="password" id="password" placeholder=" Введите пароль" name="password" required>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+          <button type="submit" class="signupbtn">Регистрация</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+  
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script> 
+
+  <div class="left">
+  <div id="id02" class="modal" visibility: hidden>
+    <span onclick="document.getElementById('id02').style.display='none'" visibility: visible class="close" title="Закрыть Modal">&times;</span>
+    <form class="modal-content" action="authorization.php" method="post">
+      <div class="container">
+        <h1>Войти</h1>
+        <p style="color: black;">Войдите в аккаунт.</p>
+        <hr>
+  
+        <label for="name"><b>Логин</b></label>
+        <input type="text" id="login" placeholder=" Введите Имя" name="login" required>
+  
+        <label for="password"><b>Пароль</b></label>
+        <input type="password" id="password" placeholder=" Введите пароль" name="password" required>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Отменить</button>
+          <button type="submit" class="signupbtn">Вход</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+  
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id02');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script> 
+
+
+<div class="left">
+  <div id="id03" class="modal" visibility: hidden>
+    <span onclick="document.getElementById('id03').style.display='none'" visibility: visible class="close" title="Закрыть Modal">&times;</span>
+    <form class="modal-content" action="authorization2.php" method="post">
+      <div class="container">
+        <h1>Войти как менеджер </h1>
+        <p style="color: black;">Войдите в аккаунт менеджера.</p>
+        <hr>
+  
+        <label for="name"><b>Логин</b></label>
+        <input type="text" id="login" placeholder=" Введите Имя" name="login" required>
+  
+        <label for="password"><b>Пароль</b></label>
+        <input type="password" id="password" placeholder=" Введите пароль" name="password" required>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Отменить</button>
+          <button type="submit" class="signupbtn">Вход</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+  
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id03');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script> 
+</body>
+<footer>
+
+
+</footer>
